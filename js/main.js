@@ -9,10 +9,19 @@ $(document).ready(function(){
     $('.fa-bars').click(function(){
         $('.navbar').toggle()
         $(this).toggleClass('fa-times')
-    })
+    });
 
     $('.navbar, .navbar a').click(function(){
         $('.navbar').hide()
         $('.fa-bars').removeClass('fa-times')
+    });
+
+    $('.home-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        items:1,
+        autoplay:true
     })
+
 })

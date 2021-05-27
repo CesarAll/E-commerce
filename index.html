@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Responsive E-commerce Website</title>
@@ -40,9 +42,9 @@
     <!-- header section ends -->
 
     <!-- home section starts -->
-    <section id="homes">
+    <section id="homes" class="owl-carousel owl-theme home-slider">
 
-        <div class="slide">
+        <div class="slide item">
             <div class="content text-center text-md-left pl-md-5 ml-md-5">
                 <h2>Nike's Shoes</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio totam quisquam deserunt quod aliquid ipsam vel. Corrupti eos numquam, minima deserunt hic consequuntur ipsam nemo.</p>
@@ -62,7 +64,7 @@
                 <img src="./images/shoe3.png" alt="tenis" style="transform: rotate(35deg);">
             </div>
         </div>
-        <div class="slide">
+        <div class="slide item">
             <div class="content text-center text-md-left pl-md-5 ml-md-5">
                 <h2>Womens's</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio totam quisquam deserunt quod aliquid ipsam vel. Corrupti eos numquam, minima deserunt hic consequuntur ipsam nemo.</p>
@@ -82,7 +84,7 @@
                 <img src="./images/cloth1.png" alt="gabardina de mujer color azul largo mediano">
             </div>
         </div>
-        <div class="slide">
+        <div class="slide item">
             <div class="content text-center text-md-left pl-md-5 ml-md-5">
                 <h2>Apple's watch</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio totam quisquam deserunt quod aliquid ipsam vel. Corrupti eos numquam, minima deserunt hic consequuntur ipsam nemo.</p>
@@ -106,8 +108,48 @@
     <!-- home section ends -->
 
 
+    <!-- products section starts -->
+
+
+    <!-- products section ends -->
+    <section id="products">
+        <h2 class="heading">Products</h2>
+        <div class="product-container">
+            <h2 class="title">Shoes</h2>
+            <div class="product-slider">
+                <div class="product-card">
+                    <div class="image">
+                        <img src="./images/shoe1.png" alt="tenis rojos adidas">
+                    </div>
+                    <div class="content">
+                        <h3>Shoe 1</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">$2500.36</div>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <h4>Product</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nam velit corrupti enim nostrum dolorum alias dignissimos porro sit repellat.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <!-- inserting javascript -->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <script src="./js/main.js"></script>
 
 </body>

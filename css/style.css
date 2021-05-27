@@ -151,8 +151,6 @@ body {
 }
 
 #homes {
-  min-height: 100vh;
-  width: 100vw;
   background: #333;
 }
 
@@ -189,13 +187,95 @@ body {
 
 #homes .slide .content .stars i {
   font-size: 2.5rem;
-  padding-left: .4rem;
+  padding-right: .4rem;
   color: gold;
+}
+
+#homes .slide .content .price {
+  color: #EB4D4B;
+  font-size: 3.5rem;
+  margin: .5rem 0;
+}
+
+#homes .slide .content button {
+  outline: none;
+  border: none;
+  height: 4rem;
+  width: 16rem;
+  background: #4834D4;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: .5rem 0;
+  border-radius: 5rem;
+  text-transform: capitalize;
+}
+
+#homes .slide .content button:hover {
+  background: #EB4D4B;
+  letter-spacing: .2rem;
+}
+
+#homes .owl-nav .owl-next, #homes .owl-nav .owl-prev {
+  position: absolute;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #EB4D4B;
+  font-size: 6rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#homes .owl-nav .owl-next {
+  right: 1rem;
+}
+
+#homes .owl-nav .owl-prev {
+  left: 1rem;
+}
+
+#homes .owl-dots {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#homes .owl-dots .owl-dot {
+  border: none;
+  outline: none;
 }
 
 .fa-times {
   -webkit-transform: translateX(27rem);
           transform: translateX(27rem);
   padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  #homes {
+    padding-bottom: 4rem;
+  }
+  #homes .owl-dots {
+    display: none;
+  }
+  #homes .slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+  }
+  #homes .slide .content {
+    padding: 1rem;
+  }
+  #homes .slide .image img {
+    width: 100vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
