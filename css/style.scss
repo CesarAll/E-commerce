@@ -407,6 +407,97 @@ body{
     }
 }
 
+#reviews {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url(../images/pic4.jpg),linear-gradient($blue,$blue) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: screen;
+    position: relative;
+
+    .shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%
+        
+    
+    }
+
+    .heading {
+        @include heading();
+        padding-top: 7rem;
+        color: $red;
+        
+
+        &::after{
+            background: #fff;
+        }
+    }
+
+    .box-container {
+
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .review-slider{
+            .box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .image {
+                    margin-top: 10rem;
+                    margin-left: 3rem;
+
+                    img {
+                        height: 10rem;
+                        width: 8rem;
+                        border-radius: 50% 50% 50% 0%;
+                        border: .5rem solid $red;
+
+                    }
+                }
+
+                .comment {
+                    height: 20rem;
+                    width: 45rem;
+                    background: #fff;
+                    border-radius: 2% 2% 0% 40%;
+                    padding-top: 2rem;
+
+                    p {
+                        color: #333;
+                        font-size: 1.2rem;
+                        padding: 2rem;
+
+                        i{
+                            color: $red;
+                            font-size: 2rem;
+                            padding: 0 .5rem;
+                        }
+                    }
+
+                    h3 {
+                        text-align: end;
+                        color: $red;
+                        margin: .5rem 2rem;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 
 

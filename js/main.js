@@ -44,4 +44,12 @@ $(document).ready(function(){
         }
     })
 
+    $('.review-slider').owlCarousel({
+        loop:true,
+        //margin:10,
+        nav:true,
+        items:1,
+        autoplay:true
+    })
+
 })
