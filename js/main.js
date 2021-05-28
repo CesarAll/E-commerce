@@ -15,6 +15,14 @@ $(document).ready(function(){
         $('.navbar').hide()
         $('.fa-bars').removeClass('fa-times')
     });
+    $(window).on('scroll load', function(){
+        if($(window).scrollTop() > 20){
+            $('#header').css({
+                'background':'#EB4D4B',
+                'box-shadow': '0 .1rem .3rem #000'
+            })
+        }
+    })
 
     $('.home-slider').owlCarousel({
         loop:true,
