@@ -65,4 +65,29 @@ $(document).ready(function(){
         autoplay:true
     })
 
+    $('.brand-slider').owlCarousel({
+        loop:true,
+        //margin:10,
+        nav:false,
+        dots:false,
+        items:4,
+        autoplay:true,
+        //center:true,
+        responsive: {
+            0: {
+                items:1,
+                nav:true
+            },
+            400: {
+                items:2
+            },
+            550: {
+                items:3
+            },
+            1000: {
+                items:4
+            }
+        }
+    })
+
 })
