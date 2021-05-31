@@ -522,6 +522,101 @@ body{
 }
 
 
+//offer part 
+
+#offers {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+    .heading {
+        @include heading();
+    }
+
+    .images {
+        min-height: 20vh;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .box {
+            height: 25rem;
+            width: 30rem;
+            text-align: center;
+            margin: 2rem;
+            img {
+                height: 20rem;
+                width: 30rem;
+            }
+
+            h3 {
+                color: $red;
+                font-size: 2.5rem;
+                margin: 1rem 0;
+            }
+        }
+
+    }
+
+    .deal{
+        background: url(../images/pic3.jpg), linear-gradient($red, $red) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-blend-mode: screen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 0;
+        width: 100%;
+
+        .image {
+            img {
+                height: 50vh;
+            }
+        }
+
+        .content {
+            text-shadow: .1rem .1rem .3rem #333;
+
+            h4 {
+                font-size: 4rem;
+                color: $blue;
+            }
+            p {
+                font-size: 2rem;
+                color: #fff;
+            }
+            .stars {
+                i {
+                    font-size: 1.5rem;
+                    color: gold;
+                }
+            }
+            .price {
+                font-size: 3rem;
+                color: #fff;
+            }
+            button {
+                @include button();
+
+                &:hover {
+                    background: #333;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+
 
 
 .fa-times {
@@ -566,6 +661,21 @@ body{
 
             .title{
                 margin-left: 0;
+                text-align: center;
+            }
+        }
+    }
+
+    #offers {
+        .deal {
+            flex-flow: column;
+            .image {
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+            .content {
                 text-align: center;
             }
         }

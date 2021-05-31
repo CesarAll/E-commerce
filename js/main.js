@@ -21,6 +21,11 @@ $(document).ready(function(){
                 'background':'#EB4D4B',
                 'box-shadow': '0 .1rem .3rem #000'
             })
+        }else{
+            $('#header').css({
+                'background':'#333',
+                'box-shadow': 'none'
+            })
         }
     })
 
